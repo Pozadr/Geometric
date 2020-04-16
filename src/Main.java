@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws TriangleException {
         Wheel wheel = new Wheel(2.0);
         System.out.println("Wheel field: " +  wheel.getFiled());
         System.out.println("Wheel perimeter: " + wheel.getPerimeter());
@@ -12,9 +12,16 @@ public class Main {
         System.out.println("\nRectangle field: " +  rectangle.getFiled());
         System.out.println("Rectangle perimeter: " + rectangle.getPerimeter());
 
-        Triangle triangle = new Triangle(2.0, 10.0, 4.0, 5.0);
-        System.out.println("\nTriangle field: " +  triangle.getFiled());
-        System.out.println("Triangle perimeter: " + triangle.getPerimeter());
+        try{
+            Triangle triangle = new Triangle(1.0, 2.0, 1.1);
+            System.out.println("\nTriangle field: " +  triangle.getFiled());
+            System.out.println("Triangle perimeter: " + triangle.getPerimeter());
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
+
+
 
     }
 }
