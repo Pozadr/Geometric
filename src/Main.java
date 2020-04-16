@@ -12,5 +12,9 @@ public class Main {
         System.out.println("\nRectangle field: " +  rectangle.getFiled());
         System.out.println("Rectangle perimeter: " + rectangle.getPerimeter());
 
+        Triangle triangle = new Triangle(2.0, 10.0, 4.0, 5.0);
+        System.out.println("\nTriangle field: " +  triangle.getFiled());
+        System.out.println("Triangle perimeter: " + triangle.getPerimeter());
+
     }
 }
