@@ -8,5 +8,9 @@ public class Main {
         System.out.println("\nSquare field: " +  square.getFiled());
         System.out.println("Square perimeter: " + square.getPerimeter());
 
+        Rectangle rectangle = new Rectangle(2.0, 10.0);
+        System.out.println("\nRectangle field: " +  rectangle.getFiled());
+        System.out.println("Rectangle perimeter: " + rectangle.getPerimeter());
+
     }
 }
